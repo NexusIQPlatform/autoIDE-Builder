@@ -62,8 +62,8 @@ jobs:
 
       - name: Clone VSCode repo
         env: # Void added this
-          AUTOIDE_COMMIT: ${{ github.event.inputs.void_commit }} # Void added this
-          AUTOIDE_RELEASE: ${{ github.event.inputs.void_release }} # Void added this
+          AUTOIDE_COMMIT: ${{ github.event.inputs.autoide_commit }} # Void added this
+          AUTOIDE_RELEASE: ${{ github.event.inputs.autoide_release }} # Void added this
         run: ./get_repo.sh
 
       - name: Check PR or cron
