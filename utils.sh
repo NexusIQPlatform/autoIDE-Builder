@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-APP_NAME="${APP_NAME:-Void}"
+APP_NAME="${APP_NAME:-OlympusIDE}"
 APP_NAME_LC="$( echo "${APP_NAME}" | awk '{print tolower($0)}' )"
-BINARY_NAME="${BINARY_NAME:-void}"
-GH_REPO_PATH="${GH_REPO_PATH:-voideditor/void}"
-ORG_NAME="${ORG_NAME:-voideditor}"
+BINARY_NAME="${BINARY_NAME:-OlympusIDE}"
+GH_REPO_PATH="${GH_REPO_PATH:-NexusIQPlatform/autoIDE}"
+ORG_NAME="${ORG_NAME:-NexusIQPlatform}"
 
 echo "---------- utils.sh -----------"
 echo "APP_NAME=\"${APP_NAME}\""
