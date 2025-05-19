@@ -12,10 +12,10 @@ on:
       checkout_pr:
         type: string
         description: Checkout PR
-      void_commit: # Void added this
+      autoide_commit: # Void added this
         type: string
-        description: Checkout specific Void commit
-      void_release: # Void added this
+        description: Checkout specific autoide commit
+      autoide_release: # Void added this
         type: string
         description: Custom release number
   repository_dispatch:
@@ -33,7 +33,7 @@ on:
 env:
   APP_NAME: OlympusIDE
   ASSETS_REPOSITORY: ${{ github.repository_owner }}/binaries
-  BINARY_NAME: void
+  BINARY_NAME: autoIDE
   GH_REPO_PATH: ${{ github.repository_owner }}/binaries
   ORG_NAME: ${{ github.repository_owner }}
   OS_NAME: windows
@@ -62,8 +62,8 @@ jobs:
 
       - name: Clone VSCode repo
         env: # Void added this
-          VOID_COMMIT: ${{ github.event.inputs.void_commit }} # Void added this
-          VOID_RELEASE: ${{ github.event.inputs.void_release }} # Void added this
+          AUTOIDE_COMMIT: ${{ github.event.inputs.void_commit }} # Void added this
+          AUTOIDE_RELEASE: ${{ github.event.inputs.void_release }} # Void added this
         run: ./get_repo.sh
 
       - name: Check PR or cron
@@ -125,8 +125,8 @@ jobs:
 
       - name: Clone VSCode repo
         env: # Void added this
-          VOID_COMMIT: ${{ github.event.inputs.void_commit }} # Void added this
-          VOID_RELEASE: ${{ github.event.inputs.void_release }} # Void added this
+          AUTOIDE_COMMIT: ${{ github.event.inputs.autoide_commit }} # Void added this
+          AUTOIDE_RELEASE: ${{ github.event.inputs.autoide_release }} # Void added this
         run: ./get_repo.sh
         if: env.SHOULD_BUILD == 'yes'
 
