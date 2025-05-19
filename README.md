@@ -1,4 +1,4 @@
-# Olympus Builder
+# OlympusIDE Builder
 
 This is a fork of VSCodium, which has a nice build pipeline that we're using for Void. Big thanks to the CodeStory team for inspiring this.
 
