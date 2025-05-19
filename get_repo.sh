@@ -22,8 +22,8 @@ if [[ "${CI_BUILD}" != "no" ]]; then
   git config --global --add safe.directory "/__w/$( echo "${GITHUB_REPOSITORY}" | awk '{print tolower($0)}' )"
 fi
 
-VOID_BRANCH="main"
-echo "Cloning void ${VOID_BRANCH}..."
+AUTOIDE_BRANCH="OlympusIDE"
+echo "Cloning void ${AUTOIDE_BRANCH}..."
 
 mkdir -p vscode
 cd vscode || { echo "'vscode' dir not found"; exit 1; }
