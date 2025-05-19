@@ -31,7 +31,7 @@ on:
     - '**/*.md'
 
 env:
-  APP_NAME: Void
+  APP_NAME: OlympusIDE
   # ASSETS_REPOSITORY is where all the downloads are.
   # VSCodium has this be the current repo, voideditor/void-builder:
   # ASSETS_REPOSITORY: ${{ github.repository }}
