@@ -31,7 +31,7 @@ on:
     - '**/*.md'
 
 env:
-  APP_NAME: OlympusIDE
+  APP_NAME: autoIDE
   ASSETS_REPOSITORY: ${{ github.repository_owner }}/binaries
   BINARY_NAME: autoIDE
   GH_REPO_PATH: ${{ github.repository_owner }}/binaries
